@@ -7,8 +7,10 @@ function checkElemWidth (elem) {
     console.info(elem)
     console.info('\n\n')
   }
+
   // Recursively check all the children
   // of the element to find the culprit.
-  ;[...elem.children].forEach(checkElemWidth)
+  [...elem.children].forEach(checkElemWidth)
 }
+
 checkElemWidth(document.body)
